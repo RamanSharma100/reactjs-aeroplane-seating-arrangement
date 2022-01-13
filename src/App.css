@@ -1,0 +1,112 @@
+* {
+  font-family: "Lato", sans-serif;
+}
+.App {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  width: 60%;
+  padding: 30px 90px;
+  border: 1px solid #000;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .header {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.container .header div {
+  width: 100%;
+  display: flex;
+}
+.container .header div input[type="number"] {
+  height: 30px;
+  width: 250px;
+  margin-right: 50px;
+}
+.container .header input[type="submit"] {
+  padding: 10px;
+  border: 1px solid #000;
+  background-color: lightyellow;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+}
+
+.container .aeroplane__front {
+  width: 95%;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #000;
+  background-color: #d0e0e3;
+  font-weight: bold;
+}
+
+.container .aeroplane__seats,
+.all__seats {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.all__seats {
+  margin-top: 0;
+}
+.seats__header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% auto 30%;
+  gap: 10px;
+}
+.seats__header p {
+  border: 1px solid #000;
+  padding: 15px 0;
+  background-color: #d0e0e3;
+}
+.seat_row {
+  display: grid;
+  grid-template-columns: 30% auto 30%;
+  gap: 10px;
+  width: 100%;
+}
+.seat_row .column {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 32% 32% 32%;
+  margin: 5px 0;
+  gap: 5px;
+}
+
+.seat_row .column:nth-of-type(2) {
+  grid-template-columns: 23% 23% 23% 23%;
+}
+
+.seat_row .column .seat {
+  border: 1px solid #000;
+  width: 100%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seat_row .column .seat.seat__middle {
+  background-color: #f9cb9c;
+}
+.seat_row .column .seat.seat__window {
+  background-color: #c9daf8;
+}
+.seat_row .column .seat.seat__aisle {
+  background-color: #b6d7a8;
+}
